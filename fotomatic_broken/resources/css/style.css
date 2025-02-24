@@ -40,25 +40,44 @@ header {
   position: fixed;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
+  height: 85px;
   background-color: white;
+  z-index: 10;
+  align-items: center;
+  top: 0px;
+  
 }
 
 header .content {
   display: flex;
   align-items: center;
-  padding: 1.875rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  padding-top: 1rem;
 }
 
 header .logo {
   flex: 1;
+  font-family: "Roboto Mono";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #4A4A4A;
+  text-decoration: none;
+
 }
 
 header nav ul {
   display: flex;
+  list-style-type: none;
 }
 
 nav li {
   padding-left: 3.5rem;
+  color: #4A4A4A;
+  font-size: 1rem;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 nav a {
@@ -66,10 +85,11 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  text-decoration: none;
 }
 
 header .icon {
-  width: 1rem;
+  max-width: 1rem;
   padding-left: .75rem;
 }
 
@@ -117,6 +137,8 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url("../images/banner-landingpage.jpg");
+  align-items: center;
 }
 
 #sign-up-cta {
@@ -124,6 +146,11 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+
+  margin-left: 6.25rem;
+  height: 22rem;
+  display: flex;
+  
 }
 
 #sign-up-cta .content {
@@ -141,6 +168,7 @@ header .mobile {
 
 #sign-up-cta h2 {
   font-size: 2.25rem;
+  
 }
 
 #sign-up-cta span strong {
@@ -149,16 +177,38 @@ header .mobile {
 
 #sign-up-cta .cursive {
   font-family: "Damion", cursive;
+  font-weight: 100;
+  
 }
 
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
+  font-weight: 400;
   padding-bottom: .75rem;
+  color: white;
+  font-size: 3.125rem;
+  line-height: 1.4;
+}
+
+#sign-up-cta .email {
+  color: white;
+  font-size: 1.25rem;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 #sign-up-cta .button {
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
+  background-color: #4A4A4A;
+  border-radius: 4px;
+  width: 408px;
+  height: 64px;
+  color: white;
+  font-size: 1.25rem;
+  font-family: "Roboto Medium";
+  line-height: 1.4;
 }
 
 @media only screen and (max-width: 760px) {
