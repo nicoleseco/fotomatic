@@ -401,15 +401,26 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 #quotes-section content {
   padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
-  font-family: "Palatino", serif;
+
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
@@ -418,6 +429,7 @@ header .mobile {
 
 #quotes-section quote-citation {
   height: 1.875rem;
+  
 }
 
 @media only screen and (max-width: 760px) {
@@ -448,10 +460,21 @@ footer .content {
   color: white;
   display: flex;
   font-size: .75rem;
+  font-family: "Roboto";
+  font-weight: 400;
 }
 
 footer .copyright {
   flex-grow: 1;
+  font-size: .75rem;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+footer .location {
+  font-size: .75rem;
+  font-family: "Roboto";
+  font-weight: 400;
 }
 
 @media only screen and (min-width: 760px) {
